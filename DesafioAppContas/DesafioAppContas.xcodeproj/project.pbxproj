@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		03CC861329918D5F0003D60F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC861229918D5F0003D60F /* AppDelegate.swift */; };
 		03CC861529918D5F0003D60F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC861429918D5F0003D60F /* SceneDelegate.swift */; };
-		03CC861729918D5F0003D60F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC861629918D5F0003D60F /* LoginVC.swift */; };
+		03CC861729918D5F0003D60F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC861629918D5F0003D60F /* HomeVC.swift */; };
 		03CC861D29918D5F0003D60F /* DesafioAppContas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03CC861B29918D5F0003D60F /* DesafioAppContas.xcdatamodeld */; };
 		03CC861F29918D610003D60F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CC861E29918D610003D60F /* Assets.xcassets */; };
 		03CC862229918D610003D60F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03CC862029918D610003D60F /* LaunchScreen.storyboard */; };
 		03CC862D29918D610003D60F /* DesafioAppContasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC862C29918D610003D60F /* DesafioAppContasTests.swift */; };
 		03CC863729918D610003D60F /* DesafioAppContasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC863629918D610003D60F /* DesafioAppContasUITests.swift */; };
 		03CC863929918D610003D60F /* DesafioAppContasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC863829918D610003D60F /* DesafioAppContasUITestsLaunchTests.swift */; };
+		03CC864D29919AC30003D60F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03CC864C29919AC30003D60F /* GoogleService-Info.plist */; };
+		03CC865029919B590003D60F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 03CC864F29919B590003D60F /* FirebaseAnalytics */; };
+		03CC865229919B590003D60F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 03CC865129919B590003D60F /* FirebaseAuth */; };
+		03CC865429919B5A0003D60F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 03CC865329919B590003D60F /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,7 @@
 		03CC860F29918D5F0003D60F /* DesafioAppContas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioAppContas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CC861229918D5F0003D60F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03CC861429918D5F0003D60F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03CC861629918D5F0003D60F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		03CC861629918D5F0003D60F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		03CC861C29918D5F0003D60F /* DesafioAppContas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DesafioAppContas.xcdatamodel; sourceTree = "<group>"; };
 		03CC861E29918D610003D60F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03CC862129918D610003D60F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,7 @@
 		03CC863229918D610003D60F /* DesafioAppContasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioAppContasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CC863629918D610003D60F /* DesafioAppContasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioAppContasUITests.swift; sourceTree = "<group>"; };
 		03CC863829918D610003D60F /* DesafioAppContasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioAppContasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		03CC864C29919AC30003D60F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03CC865029919B590003D60F /* FirebaseAnalytics in Frameworks */,
+				03CC865229919B590003D60F /* FirebaseAuth in Frameworks */,
+				03CC865429919B5A0003D60F /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +137,7 @@
 				03CC861E29918D610003D60F /* Assets.xcassets */,
 				03CC862029918D610003D60F /* LaunchScreen.storyboard */,
 				03CC862329918D610003D60F /* Info.plist */,
+				03CC864C29919AC30003D60F /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -162,23 +171,23 @@
 		03CC8649299192600003D60F /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				03CC864A2991926D0003D60F /* Login */,
+				03CC864A2991926D0003D60F /* Home */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
 		};
-		03CC864A2991926D0003D60F /* Login */ = {
+		03CC864A2991926D0003D60F /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				03CC864B299192780003D60F /* VC */,
 			);
-			path = Login;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		03CC864B299192780003D60F /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				03CC861629918D5F0003D60F /* LoginVC.swift */,
+				03CC861629918D5F0003D60F /* HomeVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -199,6 +208,11 @@
 			dependencies = (
 			);
 			name = DesafioAppContas;
+			packageProductDependencies = (
+				03CC864F29919B590003D60F /* FirebaseAnalytics */,
+				03CC865129919B590003D60F /* FirebaseAuth */,
+				03CC865329919B590003D60F /* FirebaseFirestore */,
+			);
 			productName = DesafioAppContas;
 			productReference = 03CC860F29918D5F0003D60F /* DesafioAppContas.app */;
 			productType = "com.apple.product-type.application";
@@ -271,6 +285,9 @@
 				Base,
 			);
 			mainGroup = 03CC860629918D5F0003D60F;
+			packageReferences = (
+				03CC864E29919B590003D60F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 03CC861029918D5F0003D60F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -287,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03CC864D29919AC30003D60F /* GoogleService-Info.plist in Resources */,
 				03CC862229918D610003D60F /* LaunchScreen.storyboard in Resources */,
 				03CC861F29918D610003D60F /* Assets.xcassets in Resources */,
 			);
@@ -313,7 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03CC861729918D5F0003D60F /* LoginVC.swift in Sources */,
+				03CC861729918D5F0003D60F /* HomeVC.swift in Sources */,
 				03CC861D29918D5F0003D60F /* DesafioAppContas.xcdatamodeld in Sources */,
 				03CC861329918D5F0003D60F /* AppDelegate.swift in Sources */,
 				03CC861529918D5F0003D60F /* SceneDelegate.swift in Sources */,
@@ -656,6 +674,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03CC864E29919B590003D60F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03CC864F29919B590003D60F /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CC864E29919B590003D60F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		03CC865129919B590003D60F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CC864E29919B590003D60F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		03CC865329919B590003D60F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CC864E29919B590003D60F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		03CC861B29918D5F0003D60F /* DesafioAppContas.xcdatamodeld */ = {
