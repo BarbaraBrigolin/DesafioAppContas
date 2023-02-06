@@ -1,0 +1,6 @@
+framework module Pods_DesafioAppContas_DesafioAppContasUITests {
+  umbrella header "Pods-DesafioAppContas-DesafioAppContasUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
