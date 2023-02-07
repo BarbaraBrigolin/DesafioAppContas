@@ -8,7 +8,7 @@
 import UIKit
 
 enum LoginScreenString: String {
-    case logoImage = "iconeLogin"
+    case logoImage = "filemenu.and.cursorarrow.rtl"
     case titleLabel = "A um passo da melhor maneira de organizar suas finanças!"
     case email = "Digite seu Email:"
     case password = "Digite sua Senha:"
@@ -31,7 +31,8 @@ class LoginScreen: UIView {
     lazy var logoAppImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: LoginScreenString.logoImage.rawValue)
+        image.image = UIImage(systemName: LoginScreenString.logoImage.rawValue)
+        image.tintColor = .white
         image.contentMode = .scaleAspectFit
         return image
     }()
