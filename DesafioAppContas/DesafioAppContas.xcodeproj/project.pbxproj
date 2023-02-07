@@ -21,7 +21,10 @@
 		03CC865229919B590003D60F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 03CC865129919B590003D60F /* FirebaseAuth */; };
 		03CC865429919B5A0003D60F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 03CC865329919B590003D60F /* FirebaseFirestore */; };
 		03CC8657299279460003D60F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC8656299279460003D60F /* LoginScreen.swift */; };
-		03CC865A29927ACE0003D60F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC865929927ACE0003D60F /* LoginViewModel.swift */; };
+		03CC865D299284860003D60F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC865C299284860003D60F /* Alert.swift */; };
+		03CC8661299286A00003D60F /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC86602992869F0003D60F /* RegisterVC.swift */; };
+		03CC8665299286D90003D60F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC8664299286D90003D60F /* HomeVC.swift */; };
+		03CC8668299287CF0003D60F /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC8667299287CF0003D60F /* String + Extension.swift */; };
 		62734097FBBF70F44860724F /* Pods_DesafioAppContasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FC2F1AB1006632CCFA2A54 /* Pods_DesafioAppContasTests.framework */; };
 		7B1E95FE7ADE1A7F2C4ED3A5 /* Pods_DesafioAppContas_DesafioAppContasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918D11D206B8740057AC48B7 /* Pods_DesafioAppContas_DesafioAppContasUITests.framework */; };
 		C3CB4859D014146DD870B426 /* Pods_DesafioAppContas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0201A0292520FD099189351C /* Pods_DesafioAppContas.framework */; };
@@ -61,7 +64,10 @@
 		03CC863829918D610003D60F /* DesafioAppContasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioAppContasUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		03CC864C29919AC30003D60F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		03CC8656299279460003D60F /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
-		03CC865929927ACE0003D60F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		03CC865C299284860003D60F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		03CC86602992869F0003D60F /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		03CC8664299286D90003D60F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		03CC8667299287CF0003D60F /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
 		1027CFDD00314B3A81224064 /* Pods-DesafioAppContas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioAppContas.release.xcconfig"; path = "Target Support Files/Pods-DesafioAppContas/Pods-DesafioAppContas.release.xcconfig"; sourceTree = "<group>"; };
 		12A6EAE7918C713A589DF351 /* Pods-DesafioAppContas-DesafioAppContasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioAppContas-DesafioAppContasUITests.release.xcconfig"; path = "Target Support Files/Pods-DesafioAppContas-DesafioAppContasUITests/Pods-DesafioAppContas-DesafioAppContasUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1D51B0A6CA87E71E6349B4BC /* Pods-DesafioAppContasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioAppContasTests.release.xcconfig"; path = "Target Support Files/Pods-DesafioAppContasTests/Pods-DesafioAppContasTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +172,8 @@
 		03CC8646299191370003D60F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				03CC8666299287810003D60F /* Utils */,
+				03CC865B2992846F0003D60F /* Alert */,
 				03CC8649299192600003D60F /* Feature */,
 				03CC8648299191580003D60F /* AppDelegate */,
 				03CC8647299191470003D60F /* SceneDelegate */,
@@ -192,6 +200,8 @@
 		03CC8649299192600003D60F /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				03CC8662299286C00003D60F /* Home */,
+				03CC865E299286830003D60F /* Register */,
 				03CC864A2991926D0003D60F /* Login */,
 			);
 			path = Feature;
@@ -200,8 +210,8 @@
 		03CC864A2991926D0003D60F /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				03CC865829927AA60003D60F /* ViewModel */,
 				03CC864B299192780003D60F /* VC */,
+				03CC8655299279270003D60F /* Screen */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -209,7 +219,6 @@
 		03CC864B299192780003D60F /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				03CC8655299279270003D60F /* Screen */,
 				03CC861629918D5F0003D60F /* LoginVC.swift */,
 			);
 			path = VC;
@@ -223,12 +232,52 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
-		03CC865829927AA60003D60F /* ViewModel */ = {
+		03CC865B2992846F0003D60F /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				03CC865929927ACE0003D60F /* LoginViewModel.swift */,
+				03CC865C299284860003D60F /* Alert.swift */,
 			);
-			path = ViewModel;
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		03CC865E299286830003D60F /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				03CC865F2992868B0003D60F /* VC */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		03CC865F2992868B0003D60F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				03CC86602992869F0003D60F /* RegisterVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		03CC8662299286C00003D60F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				03CC8663299286C70003D60F /* VC */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		03CC8663299286C70003D60F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				03CC8664299286D90003D60F /* HomeVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		03CC8666299287810003D60F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				03CC8667299287CF0003D60F /* String + Extension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		250BE1F22EFCB479CECA9EE9 /* Pods */ = {
@@ -502,11 +551,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				03CC861729918D5F0003D60F /* LoginVC.swift in Sources */,
+				03CC8661299286A00003D60F /* RegisterVC.swift in Sources */,
+				03CC8668299287CF0003D60F /* String + Extension.swift in Sources */,
 				03CC861D29918D5F0003D60F /* DesafioAppContas.xcdatamodeld in Sources */,
-				03CC865A29927ACE0003D60F /* LoginViewModel.swift in Sources */,
+				03CC8665299286D90003D60F /* HomeVC.swift in Sources */,
 				03CC861329918D5F0003D60F /* AppDelegate.swift in Sources */,
 				03CC861529918D5F0003D60F /* SceneDelegate.swift in Sources */,
 				03CC8657299279460003D60F /* LoginScreen.swift in Sources */,
+				03CC865D299284860003D60F /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
